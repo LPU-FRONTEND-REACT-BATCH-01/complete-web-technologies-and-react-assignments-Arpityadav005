@@ -55,28 +55,68 @@
 
 // console.log(filtered_array)
 
-let arr  = [
+// let arr  = [
+//     {
+//         id:1,
+//         name:"watch",
+//         price:2999,
+//         quantity:2
+//     },
+//     {
+//         id:2,
+//         name: "shoes",
+//         price: 199,
+//         quantity:3
+//     },
+//     {
+//         id:3,
+//         name:"ak47",
+//         price:99999999,
+//         quantity:3
+//     }
+// ]
+
+// let sorted_name = arr.sort((a,b)=>a.name.localeCompare(b.name));
+// console.log(sorted_name)
+// let sorted_price = arr.sort((a,b)=>a.price-b.price);
+// console.log(sorted_price)
+
+// let arr_fruit = ["Apple","Mango","Kiwi","Banana"]
+
+// let results = arr_fruit.some(ele=>ele=='Apple')
+// console.log(results)
+
+let users = [
     {
-        id:1,
-        name:"watch",
-        price:2999,
-        quantity:2
+    id:1,
+    username:"Arman",
+    password:"armani"
     },
     {
-        id:2,
-        name: "shoes",
-        price: 199,
-        quantity:3
+    id:2,
+    username:"Sushant",
+    password:"someone"
     },
     {
         id:3,
-        name:"ak47",
-        price:99999999,
-        quantity:3
+        username:"Yashvanth",
+        password:"Yashvi"
     }
 ]
 
-let sorted_name = arr.sort((a,b)=>a.name.localeCompare(b.name));
-console.log(sorted_name)
-let sorted_price = arr.sort((a,b)=>a.price-b.price);
-console.log(sorted_price)
+let inputdata = {
+    username:"Arman",
+    password:"arman"
+}
+
+let results = users.find(ele=>ele.username===inputdata.username)
+
+if(results){
+    if(users.find(ele=>ele.password==inputdata.password)){
+        console.log("Welcome to HomePage")
+    }else{
+        console.log("Wrong password")
+    }
+}else{
+    console.log("User is not registered")
+}
