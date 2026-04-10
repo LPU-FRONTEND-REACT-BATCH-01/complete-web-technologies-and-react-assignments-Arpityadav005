@@ -78,3 +78,5 @@ let arr  = [
 
 let sorted_name = arr.sort((a,b)=>a.name.localeCompare(b.name));
 console.log(sorted_name)
+let sorted_price = arr.sort((a,b)=>a.price-b.price);
+console.log(sorted_price)
