@@ -17,11 +17,7 @@ h2{
 .bhakti{
     background-color: orangered;
 }
-div{
-    height: 300px;
-    width: 100%;
-    background-color: crimson;
-}
+
 #box{
     background-color: aqua;
     height: 200px;
@@ -45,4 +41,20 @@ button{
 
 button:hover{
     background-color: lightblue;
+}
+
+#parent{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    
+}
+.child{
+    height: 200px;
+    width: 200px;
+    background-color: crimson;
+    border: 3px solid white;
+
 }

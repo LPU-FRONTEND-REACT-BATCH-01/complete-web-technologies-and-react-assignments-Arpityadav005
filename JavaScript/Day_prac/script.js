@@ -9,114 +9,25 @@
 // - Reference
 //  -Array, Object , function
 
-// reduce
+// Array
 
-// let arr  = [
-//     {
-//         id:1,
-//         name:"Watch",
-//         price:"2999",
-//         quantity:2
-//     },
-//     {
-//         id:2,
-//         name: "shoes",
-//         price: 199,
-//         quantity:3
-//     },
-//     {
-//         id:3,
-//         name:"ak47",
-//         price:99999999,
-//         quantity:3
-//     }
+// var a = [10,'sarthak',30,'chabi',40]
+// console.log(a[3]);
 
-// ]
+var arr = [10,20,30,40,50]
+console.log(arr)
+arr.push(100)
+console.log(arr)
+arr.pop()
+console.log(arr)
+console.log(arr.length);
 
-// let total_price=arr.reduce((inital_value,arr_object)=>{
-//     console.log(arr_object.price*arr_object.quantity);
-//     return inital_value+arr_object.price*arr_object.quantity;
-// },0);
-// console.log("Total Price: "+total_price);
+arr.forEach(function(){
+    console.log("hello")
+})
 
-
-// let arr = [1,23,63,25,73,5,3]
-// arr.sort((a,b)=>a-b)
-// console.log(arr)
-
-// arr.sort((a,b)=>b-a)
-// console.log(arr)
-
-// let arr = [1,23,63,25,73,5,3]
-
-// let filtered_array = arr.filter((ele)=>{
-//     return ele>20
-// })
-
-// console.log(filtered_array)
-
-// let arr  = [
-//     {
-//         id:1,
-//         name:"watch",
-//         price:2999,
-//         quantity:2
-//     },
-//     {
-//         id:2,
-//         name: "shoes",
-//         price: 199,
-//         quantity:3
-//     },
-//     {
-//         id:3,
-//         name:"ak47",
-//         price:99999999,
-//         quantity:3
-//     }
-// ]
-
-// let sorted_name = arr.sort((a,b)=>a.name.localeCompare(b.name));
-// console.log(sorted_name)
-// let sorted_price = arr.sort((a,b)=>a.price-b.price);
-// console.log(sorted_price)
-
-// let arr_fruit = ["Apple","Mango","Kiwi","Banana"]
-
-// let results = arr_fruit.some(ele=>ele=='Apple')
-// console.log(results)
-
-let users = [
-    {
-    id:1,
-    username:"Arman",
-    password:"armani"
-    },
-    {
-    id:2,
-    username:"Sushant",
-    password:"someone"
-    },
-    {
-        id:3,
-        username:"Yashvanth",
-        password:"Yashvi"
-    }
-]
-
-let inputdata = {
-    username:"Arman",
-    password:"arman"
+var obj = {
+    user:"Harsh",   
 }
 
-let results = users.find(ele=>ele.username===inputdata.username)
-
-if(results){
-    if(users.find(ele=>ele.password==inputdata.password)){
-        console.log("Welcome to HomePage")
-    }else{
-        console.log("Wrong password")
-    }
-}else{
-    console.log("User is not registered")
-}
+console.log
