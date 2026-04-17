@@ -1,0 +1,7 @@
+{
+    "compilerOptions": {
+        "rootDir" : "./src", // we will write source file here
+        "outDir": "./dest", // we will get js file here
+        "noEmitOnError": true // no compilation if there is error
+    }
+}

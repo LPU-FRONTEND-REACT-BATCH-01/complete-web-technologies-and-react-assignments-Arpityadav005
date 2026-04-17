@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        tr td:first-child{
+            color: blue;
+        }
+        tr td:last-child{
+            color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <h1>About</h1>
+
+    <h2>Our Location</h2>
+    <ul>
+        <li>USA</li>
+        <ul>
+            <a href="">New York</a><br>
+            <a href="">Columbus</a><br>
+            <a href="">Austin</a><br>
+            <a href="">Philly</a><br>
+        </ul>
+        <li>World</li>
+        <ul>
+            <a href="">Ottava</a><br>
+            <a href="">Sydeney</a><br>
+        </ul>
+    </ul><br>
+
+    <h2>Upcomming Classes</h2>
+    <table border="2">
+        <thead>
+            <tr>
+                <th>Location</th>
+                <th>Topic</th>
+            </tr>
+            <tr>
+                <td>New York</td>
+                <td>JavaScript & jQuery</td>
+            </tr>
+            <tr>
+                <td>San Francisco</td>
+                <td>HTML & CSS</td>
+            </tr>
+        </thead>
+    </table>
+
+    <h2>Sign Up!</h2>
+    <label for="name">Name:</label>
+    <input type="text" id="name" required><br>
+
+    <label for="mail">Email:</label>
+    <input type="text" id="mail" name="" required><br>
+    Location:
+    <select name="loc" id="loc">
+        <option value="San Francisco" selected>San Francisco</option>
+        <option value="Washington">Washington</option>
+    </select>
+
+</body>
+</html>

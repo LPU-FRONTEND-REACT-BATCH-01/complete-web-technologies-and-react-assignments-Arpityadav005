@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .briyani ~ li{
+            color:red;
+        }
+        .type+li{
+            color: lightblue;
+        }
+        
+        .lassi ~ li{
+            color: aqua;
+        }
+        .lassi~.sugar{
+            color: brown;
+        }
+    </style>
+</head>
+<body>
+    
+    <ul >
+        <h1 class="briyani">Ingredients for Biryani</h1>
+        <li>Rice</li>
+        <li>Chicken</li>
+        <ul class="type">
+            <li>Fried</li>
+            <li>Grilled</li>
+            <li>Roasted</li>
+        </ul>
+        <li>Paneer</li>
+        <h1>Fighter Jet</h1>
+        <li>Spices</li>
+        <li>Gas/Electric</li>
+        <li>Fuel</li>
+    </ul>
+    <hr>
+
+    <ul>
+        <h1 class="lassi">Ingredients for Lassi</h1>
+        <li>Curd</li>
+        <li>Water</li>
+        <li>Sugar</li>
+            <ul class="sugar">
+                <li>White Sugar</li>
+                <li>Brown Sugar</li>
+            </ul>
+        <li>Malai</li>
+        <li>Kova</li>
+    </ul>
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .card{
+            height: 150px;
+            width: 220px;
+            box-shadow: 0px 0px 20px;
+            text-align: center;
+            
+        }
+        .card:hover{
+            height: 160px;
+            width: 230px;
+        }
+        .card:hover .auther{
+            color:cadetblue;
+        }
+        .auther{
+            text-align: center;
+            text-decoration: underline;
+            color: gray;
+        }
+        
+        .quote::first-letter{
+            color: blueviolet;
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+    <p class = "quote">The Only way to do great work is to love what you do.</p>
+    <p class="auther">- Steve Jobs</p>
+    </div>
+</body>
+</html>
